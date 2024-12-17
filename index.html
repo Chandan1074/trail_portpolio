@@ -32,7 +32,7 @@
             display: block;
             margin: 20px auto;
             width: 200px;
-            border-radius: 20px
+            border-radius: 20px;
         }
 
         /* Section Styling */
@@ -45,15 +45,6 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
-        h2 {
-            color: #2c3e50;
-            background: #eaf2f8;
-            padding: 10px;
-            border-left: 6px solid #3498db;
-            margin: -20px -20px 20px -20px;
-        }
-
-        /* Table Styling */
         table {
             width: 100%;
             border-collapse: collapse;
@@ -79,6 +70,23 @@
             background-color: #f0f8ff;
         }
 
+
+
+        h2 {
+            color: #2c3e50;
+            background: #eaf2f8;
+            padding: 10px;
+            border-left: 6px solid #3498db;
+            margin: -20px -20px 20px -20px;
+        }
+
+        iframe {
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
         /* Footer Styling */
         footer {
             text-align: center;
@@ -88,34 +96,20 @@
             margin-top: 20px;
         }
 
-        /* Links */
-        a {
-            color: #3498db;
-            text-decoration: none;
+        frame {
+            border: 1px solid #ddd;
         }
 
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* List Styling */
-        ul, ol {
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        /* Hover Effects */
-        section:hover {
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-        }
-        video {
-            width: 850px;
+        frameset {
+            border: none;
         }
     </style>
 </head>
+<frameset cols="30%,*">
+    <frame src="menu.html" name="menuFrame" title="Menu">
+    <frame src="content.html" name="contentFrame" title="Content">
+</frameset>
+
 <body>
     <!-- Header -->
     <header>
@@ -135,7 +129,6 @@
         </p>
     </section>
 
-    <!-- Personal Information Section -->
     <section>
         <h2>Personal Information</h2>
         <table>
@@ -162,7 +155,6 @@
         </table>
     </section>
 
-    <!-- Skills and Projects Section -->
     <section>
         <h2>Skills and Projects</h2>
         <table>
@@ -190,29 +182,42 @@
         </table>
     </section>
 
-    <!-- Certificates Section -->
+    <!-- Certificates Section with Frame -->
     <section>
         <h2>Certificates</h2>
         <ul>
-            <li>Python Data structures<a href="https://www.coursera.org/account/accomplishments/verify/GGLET79VETG7"> Coursera</a></li>
+            <li>Python Data structures<a href="https://www.coursera.org/account/accomplishments/verify/GGLET79VETG7" target="_blank"> Coursera</a></li>
             <li>Java Basics - greeksforgeeks</li>
-            <li>C for Everyone: Programming Fundamentals<a href="https://www.coursera.org/account/accomplishments/verify/7GRENX7FS3X4"> Coursera</a></li>
+            <li>C for Everyone: Programming Fundamentals<a href="https://www.coursera.org/account/accomplishments/verify/7GRENX7FS3X4" target="_blank"> Coursera</a></li>
         </ul>
     </section>
-    <!-- Video Information -->
-    <section>
-        <h2>About my college</h2>
-        <video controls autoplay muted loop src="brand_video_website.mp4"  video>
-    </section>
 
-    <!-- Contact Information -->
+    <!-- About GITAM University Section -->
+    <section>
+        <h2>About GITAM University</h2>
+        <iframe src="brand_video_website.mp4" height="400"></iframe>
+        <p>
+            GITAM (Gandhi Institute of Technology and Management) University is a premier educational institution located in Visakhapatnam, Andhra Pradesh. 
+            Established in 1980, GITAM has become synonymous with quality education, offering undergraduate, postgraduate, and doctoral programs 
+            across various fields including Engineering, Science, Management, Pharmacy, and Humanities.
+        </p>
+        <p>
+            The Visakhapatnam campus is renowned for its state-of-the-art facilities, experienced faculty, and vibrant student community. 
+            The lush green campus by the Bay of Bengal provides a perfect setting for academic excellence and holistic development.
+        </p>
+        <p>
+            GITAM is committed to fostering innovation, research, and entrepreneurship among its students, making it a top choice for aspiring learners across India.
+        </p>
+    </section>
+   
+
+    <!-- Contact Section with Frame -->
     <section>
         <h2>Contact</h2>
-        <p>Email: <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSGMvbbQKwWcbmKFGWkVRHNsfhQnmrrMgpFftcMMNTHglbCdrMgsDqWqdrSHtlXGllFDzbzk">cjami2@gitam.in</a></p>
-        <p>Phone: <a href="">+91-9381063560</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/chandan1074/" target="_blank">Chandan Jami</a></p>
+        <p>Email: <a href="mailto:cjami2@gitam.in">cjami2@gitam.in</a></p>
+        <p>Phone: <a href="tel:+919381063560">+91-9381063560</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/chandan1074/" target="_blank">Click here</a></p>
     </section>
-    
 
     <!-- Footer -->
     <footer>
